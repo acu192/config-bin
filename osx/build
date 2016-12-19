@@ -40,7 +40,7 @@ function clean_exit
 }
 
 echo 'Compiling...' 1>&2
-if g++ -I ~/Desktop/rholib -O0 -ansi $files -o $outputfile -lpcap -lnet -lpthread; then
+if g++ -I ~/Desktop/rholib -O0 -ansi $files -o $outputfile -lpcap -lnet -pthread; then
     echo 'Running...' 1>&2
     $outputfile $arguments &
     PROG_PID="$!"

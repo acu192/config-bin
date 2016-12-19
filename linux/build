@@ -59,7 +59,7 @@ fi
 CC="g++"
 CC_FLAGS="-O3 -Wall -Werror -ansi -pedantic"
 PP_DEFINES="$(pcap-config --defines) $(libnet-config --defines)"
-STATIC_LIBS="-lpthread $(pcap-config --libs) $(libnet-config --libs)"
+STATIC_LIBS="-pthread $(pcap-config --libs) $(libnet-config --libs)"
 
 #
 # Parse arguments, compile, and run...
