@@ -1,9 +1,0 @@
-#!/bin/bash
-
-for i in $(find . -type d -name '.hg')
-do
-    dir="$(dirname "$i")"
-    echo "$dir"
-    (cd "$dir" && hg "$@")
-    echo
-done
