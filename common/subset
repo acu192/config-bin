@@ -4,6 +4,8 @@
 Use "Reservoir Sampling" to return `k` random lines from the input files (or
 stdin if no input files are passed on the command line).
 See: https://en.wikipedia.org/wiki/Reservoir_sampling
+
+Run `subset --help` for info.
 """
 
 import argparse
